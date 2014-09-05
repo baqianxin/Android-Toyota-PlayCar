@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="yellow">#FFFBBF11</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="black">#ff000000</color>
+    <color name="light_gray">#ffdddddd</color>
+    <color name="dark_gray">#ffaaaaaa</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#99000000</color>
+    <color name="title_bar_bg">#ff2a87d3</color>
+    <color name="default_bg">#fff5f5f5</color>
+    <color name="text_default">#ff545454</color>
+    <color name="divider_line">#ffCDCDCD</color>
+
+</resources>

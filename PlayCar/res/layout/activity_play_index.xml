@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_play_index_bg" >
+
+    <com.toyota.playcar.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_play_type_bg" >
+
+        <Button
+            android:id="@+id/btn_route_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_btn_scenic_spot_bg"
+            android:paddingBottom="10dp"
+            android:paddingLeft="-10dp"
+            android:text="@string/route_recommend"
+            android:textColor="#ff5aabe3"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_featured_selfdrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_route_recommend"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="-70dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-30dp"
+            android:layout_toRightOf="@+id/btn_route_recommend"
+            android:background="@drawable/ic_btn_route_bg"
+            android:paddingTop="20dp"
+            android:text="@string/featured_selfdrive"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

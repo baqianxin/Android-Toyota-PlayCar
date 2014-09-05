@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_layout_register_bg"
+    android:orientation="vertical" >
+
+    <com.toyota.playcar.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_middle"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile"
+                    android:textColor="@color/text_default"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_mobile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_border_bg"
+                    android:ems="10"
+                    android:hint="@string/input_mobile_hint"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textColor="@color/text_default"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/edit_border_bg"
+                    android:ems="10"
+                    android:hint="@string/input_password_hint"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_default"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/padding_middle"
+                android:paddingRight="@dimen/padding_middle" >
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_submit_bg_selector"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_normal"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <Button
+                    android:id="@+id/btn_register"
+                    style="?android:attr/buttonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn_submit_bg_selector"
+                    android:paddingBottom="@dimen/padding_normal"
+                    android:paddingLeft="@dimen/padding_large"
+                    android:paddingRight="@dimen/padding_large"
+                    android:paddingTop="@dimen/padding_normal"
+                    android:text="@string/register"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal" >
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.0"
+            android:background="@color/divider_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_small"
+            android:paddingRight="@dimen/padding_small"
+            android:text="@string/other_login_method"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/textsize_normal" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1.0"
+            android:background="@color/divider_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_normal" >
+
+         <Button
+                android:id="@+id/btn_qq_login"
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/btn_submit_bg_selector"
+                android:paddingBottom="@dimen/padding_normal"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_normal"
+                android:text="@string/qq_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+            <Button
+                android:id="@+id/btn_weibo_login"
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/btn_submit_bg_selector"
+                android:paddingBottom="@dimen/padding_normal"
+                android:paddingLeft="@dimen/padding_large"
+                android:paddingRight="@dimen/padding_large"
+                android:paddingTop="@dimen/padding_normal"
+                android:text="@string/qq_login"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

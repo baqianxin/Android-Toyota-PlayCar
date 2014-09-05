@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_layout_register_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_title_bar_main" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/ic_main_play"
+            android:text="@string/play"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_maintain"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_below="@+id/btn_play"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_main_maintain"
+            android:text="@string/maintain"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_use"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_play"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/ic_main_use"
+            android:text="@string/use"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btn_exchange"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btn_use"
+            android:layout_marginRight="-40dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/ic_main_change"
+            android:text="@string/exchange"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+    </RelativeLayout>
+
+</LinearLayout>

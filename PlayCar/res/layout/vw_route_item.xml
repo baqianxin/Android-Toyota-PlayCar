@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/tv_route_place_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_toRightOf="@+id/tv_route_number_item"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Largesadasdasdasdasdasdxt"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_route_place_name_item"
+        android:background="@color/title_bar_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_route_number_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_route_place_name_item"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:background="@color/title_bar_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="路线asddasdaA"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:src="@drawable/ic_arrow_right" />
+
+</RelativeLayout>

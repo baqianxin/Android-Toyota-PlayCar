@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:orientation="vertical" >
+
+    <com.toyota.playcar.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.toyota.playcar.view.TitleBar>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_down_arrow" />
+
+    <ListView
+        android:id="@+id/lv_selfdrive_tip_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:divider="@color/black"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_item_bg_selector"
+        android:padding="@dimen/padding_normal"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="false" />
+
+    <ListView
+        android:id="@+id/lv_selfdrive_tip_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:cacheColorHint="#00000000"
+        android:clipToPadding="false"
+        android:divider="@color/black"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_item_bg_selector"
+        android:padding="@dimen/padding_normal"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollingCache="false" />
+
+</LinearLayout>
